@@ -160,11 +160,11 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: net.congcq.anglelauncher.slimmed-${{ matrix.platform_name }}-trollstore.tipa
-          path: artifacts/net.kdt.pojavlauncher.slimmed-*-${{ matrix.platform_name }}-trollstore.tipa
+          path: artifacts/net.congcq.anglelauncher.slimmed-*-${{ matrix.platform_name }}-trollstore.tipa
 
       - name: Upload PojavLauncher.dSYM
         uses: actions/upload-artifact@main
         if: matrix.platform_name == 'ios'
         with:
-          name: PojavLauncher.dSYM
+          name: AngleLauncher.dSYM
           path: artifacts/AngleLauncher.dSYM
