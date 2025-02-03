@@ -298,7 +298,7 @@ int launchJVM(NSString *username, id launchTarget, int width, int height, int mi
     }
     margv[++margc] = "-cp";
     margv[++margc] = classpath.UTF8String;
-    margv[++margc] = "net.kdt.pojavlaunch.PojavLauncher";
+    margv[++margc] = "net.kdt.pojavlaunch.AngleLauncher";
 
     if (launchJar) {
         margv[++margc] = "-jar";

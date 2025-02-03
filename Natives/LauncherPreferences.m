@@ -169,7 +169,7 @@ NSArray* getRendererNames(BOOL containsDefault) {
             localize(@"preference.title.renderer.release.auto", nil),
             localize(@"preference.title.renderer.release.gl4es", nil),
             localize(@"preference.title.renderer.release.angle", nil),
-localize(@"preference.title.renderer.release.zink", nil)
+            localize(@"preference.title.renderer.release.zink", nil)
         ].mutableCopy;
     } else {
 #endif
@@ -178,7 +178,7 @@ localize(@"preference.title.renderer.release.zink", nil)
             localize(@"preference.title.renderer.debug.gl4es", nil),
             localize(@"preference.title.renderer.debug.angle", nil),
             localize(@"preference.title.renderer.debug.zink", nil),
-localize(@"preference.title.renderer.debug.virgl", nil)
+            localize(@"preference.title.renderer.debug.virgl", nil)
         ].mutableCopy;
 #if CONFIG_RELEASE
     }
