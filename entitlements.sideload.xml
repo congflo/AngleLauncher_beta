@@ -2,9 +2,9 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>net.kdt.pojavlauncher</string>
+	<string>net.congcq.anglelauncher</string>
 <key>com.apple.private.security.container-required</key>
-	<string>net.kdt.pojavlauncher</string>
+	<string>net.congcq.anglelauncher</string>
     <key>get-task-allow</key>
     <true/>
 

@@ -74,11 +74,11 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>net.kdt.pojavlauncher</string>
+	<string>net.congcq.anglelauncher</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>PojavLauncher</string>
+	<string>AngleLauncher</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
