@@ -13,7 +13,7 @@ import net.kdt.pojavlaunch.uikit.*;
 import net.kdt.pojavlaunch.utils.*;
 import net.kdt.pojavlaunch.value.*;
 
-public class AngleLauncher {
+public class PojavLauncher {
     private static float currProgress, maxProgress;
 
     public static void main(String[] args) throws Throwable {
