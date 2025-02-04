@@ -91,12 +91,12 @@ target_link_libraries(AFNetworking
 )
 
 # MinecraftAccount JNI
-add_library(PojavAccountJNI SHARED
+add_library(AngleAccountJNI SHARED
   authenticator/MinecraftAccountJNI.m
 )
-target_link_libraries(PojavAccountJNI)
+target_link_libraries(AngleAccountJNI)
 
-# PojavLauncher
+# AngleLauncher
 add_executable(AngleLauncher
   dyld_bypass_validation.m
   dyld_patch_platform.m
