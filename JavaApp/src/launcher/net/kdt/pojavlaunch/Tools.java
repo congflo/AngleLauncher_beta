@@ -60,7 +60,7 @@ public final class Tools {
 
         System.out.println("Args init finished. Now starting game");
 
-        PojavClassLoader loader = (PojavClassLoader) ClassLoader.getSystemClassLoader();
+        AngleClassLoader loader = (AngleClassLoader) ClassLoader.getSystemClassLoader();
         // add launcher.jar itself
         for (String s : System.getProperty("java.class.path").split(":")) {
             loader.appendToClassPathForInstrumentation(s);

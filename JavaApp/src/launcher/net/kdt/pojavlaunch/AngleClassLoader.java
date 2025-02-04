@@ -10,8 +10,8 @@ import java.net.*;
  * compatibility that safety casting to URLClassLoader:
  * ((URLClassLoader) ClassLoader.getSystemClassLoader())
  */
-public class PojavClassLoader extends URLClassLoader {
-    public PojavClassLoader(ClassLoader parent) {
+public class AngleClassLoader extends URLClassLoader {
+    public AngleClassLoader(ClassLoader parent) {
         super(new URL[0], parent);
     }
 
