@@ -6,8 +6,6 @@
 
 #include "GL/gl.h"
 #include "GL/glext.h"
-#include "GLES2/gl2.h"
-#include "GLES2/gl2ext.h"
 #include "GLES3/gl32.h"
 #include "string_utils.h"
 
@@ -256,7 +254,7 @@ void glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffse
     int fbID, texID;
     glGetIntegerv(GL_DRAW_FRAMEBUFFER_BINDING, &fbID);
     glGetIntegerv(GL_TEXTURE_BINDING_2D, &texID);
-    //glBindFramebuffer(GL_READ_FRAMEBUFFER, 0);
+    glBindFramebuffer(GL_READ_FRAMEBUFFER, 0); // i'm enabled it.
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, depthFB);
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, target, texID, level);
     assert(glCheckFramebufferStatus(GL_DRAW_FRAMEBUFFER) == GL_FRAMEBUFFER_COMPLETE);
