@@ -199,7 +199,7 @@ void glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei widt
         proxy_width = ((width<<level)>maxTextureSize)?0:width;
         proxy_height = ((height<<level)>maxTextureSize)?0:height;
         proxy_intformat = internalformat;
-        swizzle_internalformat((GLenum *) &internalformat, format, type); //.
+        //swizzle_internalformat((GLenum *) &internalformat, format, type);
     } else {
         gles_glTexImage2D(target, level, internalformat, width, height, border, format, type, data);
     }
@@ -254,7 +254,7 @@ void glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffse
     int fbID, texID;
     glGetIntegerv(GL_DRAW_FRAMEBUFFER_BINDING, &fbID);
     glGetIntegerv(GL_TEXTURE_BINDING_2D, &texID);
-    glBindFramebuffer(GL_READ_FRAMEBUFFER, 0); // i'm enabled it.
+    //glBindFramebuffer(GL_READ_FRAMEBUFFER, 0);
     glBindFramebuffer(GL_DRAW_FRAMEBUFFER, depthFB);
     glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, target, texID, level);
     assert(glCheckFramebufferStatus(GL_DRAW_FRAMEBUFFER) == GL_FRAMEBUFFER_COMPLETE);
