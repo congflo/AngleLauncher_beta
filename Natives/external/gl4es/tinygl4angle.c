@@ -40,7 +40,7 @@ AliasDecl(glBindFragDataLocationIndexed, EXT)
 int proxy_width, proxy_height, proxy_intformat, maxTextureSize;
 
 void(*gles_glCopyTexSubImage2D)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-//void glGetBufferParameteriv(GLenum target, GLenum value, GLint * data);
+void glGetBufferParameteriv(GLenum target, GLenum value, GLint * data);//.
 void(*gles_glGetTexLevelParameteriv)(GLenum target, GLint level, GLenum pname, GLint *params);
 void(*gles_glShaderSource)(GLuint shader, GLsizei count, const GLchar * const *string, const GLint *length);
 void(*gles_glTexImage2D)(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *data);
@@ -199,7 +199,7 @@ void glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei widt
         proxy_width = ((width<<level)>maxTextureSize)?0:width;
         proxy_height = ((height<<level)>maxTextureSize)?0:height;
         proxy_intformat = internalformat;
-        // swizzle_internalformat((GLenum *) &internalformat, format, type);
+        swizzle_internalformat((GLenum *) &internalformat, format, type); //.
     } else {
         gles_glTexImage2D(target, level, internalformat, width, height, border, format, type, data);
     }
