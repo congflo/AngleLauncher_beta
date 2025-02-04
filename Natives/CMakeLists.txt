@@ -31,6 +31,7 @@ include_directories(
   "external/Apple"
   "external/ballpa1n"
   "external/ballpa1n/wrapped"
+  "external/MetalANGLE"
 )
 
 # For cacio support library

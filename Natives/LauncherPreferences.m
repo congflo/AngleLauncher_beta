@@ -139,6 +139,7 @@ NSArray* getRendererKeys(BOOL containsDefault) {
     NSMutableArray *array = @[
         @"auto",
         @ RENDERER_NAME_GL4ES,
+        @ RENDERER_NAME_HOLY_GL4ES,
         @ RENDERER_NAME_MTL_ANGLE
     ].mutableCopy;
 
@@ -167,7 +168,9 @@ NSArray* getRendererNames(BOOL containsDefault) {
         // Disabling Zink on iOS 16.0+ to figure out what's wrong with it
         array = @[
             localize(@"preference.title.renderer.release.auto", nil),
-            localize(@"preference.title.renderer.release.gl4es", nil),
+
+localize(@"preference.title.renderer.release.gl4es", nil),
+            localize(@"preference.title.renderer.release.holygl4es", nil),
             localize(@"preference.title.renderer.release.angle", nil),
             localize(@"preference.title.renderer.release.zink", nil)
         ].mutableCopy;
@@ -176,6 +179,8 @@ NSArray* getRendererNames(BOOL containsDefault) {
         array = @[
             localize(@"preference.title.renderer.debug.auto", nil),
             localize(@"preference.title.renderer.debug.gl4es", nil),
+
+localize(@"preference.title.renderer.debug.holygl4es", nil),
             localize(@"preference.title.renderer.debug.angle", nil),
             localize(@"preference.title.renderer.debug.zink", nil),
             localize(@"preference.title.renderer.debug.virgl", nil)
