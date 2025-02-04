@@ -2,12 +2,7 @@ name: Development build
 
 on:
   pull_request:
-    branches-ignore:
-      - 'l10n_main'
-    types: [opened, reopened]
   push:
-    branches-ignore:
-      - 'l10n_main'
   workflow_dispatch:
 
 jobs:
@@ -162,7 +157,7 @@ jobs:
           name: net.congcq.anglelauncher.slimmed-${{ matrix.platform_name }}-trollstore.tipa
           path: artifacts/net.congcq.anglelauncher.slimmed-*-${{ matrix.platform_name }}-trollstore.tipa
 
-      - name: Upload PojavLauncher.dSYM
+      - name: Upload AngleLauncher.dSYM
         uses: actions/upload-artifact@main
         if: matrix.platform_name == 'ios'
         with:
