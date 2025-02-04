@@ -152,7 +152,6 @@ NSArray* getRendererKeys(BOOL containsDefault) {
     } else {
 #endif
         [array addObject:@ RENDERER_NAME_VK_ZINK];
-        [array addObject:@ RENDERER_NAME_VIRGL];
 #if CONFIG_RELEASE
     }
 #endif
@@ -178,8 +177,7 @@ localize(@"preference.title.renderer.release.gl4es", nil),
             localize(@"preference.title.renderer.debug.auto", nil),
             localize(@"preference.title.renderer.debug.gl4es", nil),
             localize(@"preference.title.renderer.debug.angle", nil),
-            localize(@"preference.title.renderer.debug.zink", nil),
-            localize(@"preference.title.renderer.debug.virgl", nil)
+            localize(@"preference.title.renderer.debug.zink", nil)
         ].mutableCopy;
 #if CONFIG_RELEASE
     }
