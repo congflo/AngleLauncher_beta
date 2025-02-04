@@ -4,9 +4,10 @@
 
 #define GL_GLEXT_PROTOTYPES
 
-#include "GL/gl.h"
-#include "GL/glext.h"
-#include "GLES3/gl32.h"
+#include "angle_gl.h"
+//#include "GL/gl.h"
+//#include "GL/glext.h"
+//#include "GLES3/gl32.h"
 #include "string_utils.h"
 
 #define LOOKUP_FUNC(func) \
